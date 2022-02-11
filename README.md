@@ -6,7 +6,7 @@
 ![](https://img.shields.io/github/license/ivanfsilva/rh)
 
 
-![](https://img.shields.io/badge/STATUS-CONCLUIDO-green)
+![](https://img.shields.io/badge/STATUS-EM_DESENVOLVIMENTO-yellow)
 
 ## Indice
 
@@ -30,9 +30,9 @@ Então por isso que nesse projeto a parte de persistência está utilizando clas
 
 
 
-<!-- <h4 align="center"> 
+<h4 align="center"> 
 	🚧  Leilão - Release 2.0 em desenvolvimento...  🚧
-</h4> -->
+</h4>
 
 
 ### Regra de Negócio
