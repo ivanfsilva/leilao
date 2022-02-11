@@ -30,9 +30,11 @@ Então por isso que nesse projeto a parte de persistência está utilizando clas
 
 
 
-<h4 align="center"> 
-	🚧  Leilão - Release 2.0 em desenvolvimento...  🚧
-</h4>
+[//]: # (<h4 align="center"> )
+
+[//]: # (	🚧  Leilão - Release 1.0 concluida  🚧)
+
+[//]: # (</h4>)
 
 
 ### Regra de Negócio
