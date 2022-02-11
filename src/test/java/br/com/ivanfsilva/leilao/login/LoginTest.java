@@ -1,6 +1,5 @@
 package br.com.ivanfsilva.leilao.login;
 
-import org.junit.After;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -21,7 +20,6 @@ public class LoginTest {
     public void beforeEach() {
         this.browser = new ChromeDriver();
         browser.navigate().to("http://localhost:8080/login");
-
     }
 
     @AfterEach
@@ -49,5 +47,13 @@ public class LoginTest {
         Assertions.assertTrue(browser.getCurrentUrl().equals("http://localhost:8080/login?error"));
         Assertions.assertTrue(browser.getPageSource().contains("Usuário e senha inválidos."));
         Assertions.assertThrows(NoSuchElementException.class, () -> browser.findElement(By.id("usuario-logado")));
+    }
+
+    @Test
+    public void naoDeveriaAcessarPaginaRestritaSemEstarLogado() {
+        this.browser.navigate().to("http://localhost:8080/leiloes/2");
+
+        Assertions.assertTrue(browser.getCurrentUrl().equals("http://localhost:8080/login"));
+        Assertions.assertFalse(browser.getCurrentUrl().contains("Dados do Leilão"));
     }
 }
